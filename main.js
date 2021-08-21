@@ -4,7 +4,7 @@ document.getElementById("promo-btn").addEventListener("click", function () {
     let promoCode = document.getElementById("promo-input").value
     if (promoCode.toLowerCase() == "stevekaku") {
         promo = true;
-        alert("Your promo code is applied now")
+        alert("Your promo code applied")
         document.getElementById("promo-btn").innerText = "promo applied"
         document.getElementById("promo-btn").setAttribute("disabled", true)
         updateTotal()
@@ -16,10 +16,6 @@ document.getElementById("promo-btn").addEventListener("click", function () {
 
 
 })
-
-
-
-
 
 
 function updateTotal() {
@@ -50,9 +46,7 @@ function updatePrice(id, price) {
 
 
 
-
-
-//memory part price update
+//memory  price update
 document.getElementById("memory-8").addEventListener("click", function () {
     updatePrice("memory", 0)
     updateTotal()
@@ -64,7 +58,7 @@ document.getElementById("memory-16").addEventListener("click", function () {
 })
 
 
-//storage part price update
+//storage price update
 document.getElementById("storage-256").addEventListener("click", function () {
     updatePrice("storage", 0)
     updateTotal()
